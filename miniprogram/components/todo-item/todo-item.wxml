@@ -1,0 +1,25 @@
+<!--pages/components/todo-item.wxml-->
+<wxs module="cls">
+  var f_cls = function(i){
+    return i == 1 ? 'finished-todo' : 'unfinished-todo';
+  }
+  var cs = ['#19be6b','#2d8cf0','#ed4014','#a12ed8','#f5222d','#2f54eb'];
+  var tag_c = function(i){
+    
+    return 'background-color:'+cs[i%(cs.length)];
+  }
+  module.exports={f_cls:f_cls,tag_c:tag_c,cs:cs}
+</wxs>
+<view class='todo-item {{cls.f_cls(todo.finished)}}'>
+  <view class='todo-time'>{{todo.time}}</view>
+  <view class='todo-card'>
+    <view class='todo-main'> 
+      <view class='todo-content' data-content="{{todo.content}}">
+        {{todo.content}}
+      </view>
+      <view class='todo-tag'> <view class='tag-dot' style="{{cls.tag_c(todo.tagType)}}">
+      </view><view>{{todo.tag}}</view></view>
+    </view>
+    <view class='todo-checkbox'><slot></slot></view>
+  </view>
+</view>

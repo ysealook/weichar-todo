@@ -1,0 +1,22 @@
+<!-- <view class='todo-title' margin-bottom="10rpx">
+  <text>想要做什么？那就写下来</text>
+</view>
+<view class='new-todo-form'>
+  <form bindsubmit='todoSubmit' bindreset="fromReset" id='todo-form'>
+      <textarea id='todo-textarea' placeholder='to do...' name="content" value='{{todo.content}}'>
+    </textarea>
+    <view class='tags'>
+      <radio-group bindchange="tagRadio" name="tag">
+        <radio wx:for="{{initTags}}" value='{{item.type}}'>{{item.name}}</radio>
+        <radio wx:for="{{userTags}}" value='{{item.type}}'>{{item.name}}</radio>
+      </radio-group>
+      <view class='tag-handle'>
+        <view class='show-tag-input'>添加标签</view>
+        <input class='tag-input' bindinpu></input>
+        <view bindtap='addTag'>添加</view>
+      </view>
+    </view>
+    <button form-type='submit' id='todo-sub-btn'>写下来</button>
+    <button form-type='reset'>重置</button>
+  </form>
+</view> -->

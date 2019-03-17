@@ -1,0 +1,58 @@
+/* pages/write.wxss */
+@import '../../template/todo/todo.wxss';
+.home-finished,.home-unfinished{
+  padding: 10rpx 0;
+  background: #f8f8f9;
+  display: flex;
+  align-items: center;
+}
+.home-finished{
+  color: #4fc08d;
+}
+.todo-count{
+  margin-left:40rpx;
+  min-width:1rem;
+  height:1rem;
+  font-size:.6rem;
+  text-align:center;
+  border:1px #fff solid;
+  border-radius:50%;
+  background:#eee;
+  line-height:1rem;
+}
+.home-unfinished{
+  color:#ff9900;
+}
+checkbox .wx-checkbox-input{
+   border-radius: 50%;/* 圆角 */
+   width: 40rpx; /* 背景的宽 */
+   height: 40rpx; /* 背景的高 */
+} 
+checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+   border: none;
+   background: rgb(30, 190, 137);
+} 
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+  border-radius: 50%;/* 圆角 */
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  font-size:30rpx;
+  color:#fff; 
+  background: transparent;
+  transform:translate(-50%, -50%) scale(1);
+  -webkit-transform:translate(-50%, -50%) scale(1);
+}
+
+.hover-nav{
+  color:#90d4b6;
+}
+.write-todo-nav{
+  text-align: center;
+  border: 1px solid rgb(40, 171, 211);
+  background: #fff;
+  width:40%;
+  margin: 20rpx auto;
+  padding: 10rpx 8rpx;
+}

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "todo-item":"/components/todo-item/todo-item"
+  },
+  "window": {
+    "navigationBarTitleText": "Todo概览"
+  }
+}

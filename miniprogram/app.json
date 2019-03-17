@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/todo/todo",
+    "pages/write/write"
+  ],
+  "window": {
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#7cda5200",
+    "navigationBarTitleText": "just todo",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#333,",
+    "selectedColor": "#19be6b",
+    "backgroundColor": "#red",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/home_bar.png",
+        "selectedIconPath": "./images/home_bar.png"
+      },
+      {
+        "pagePath": "pages/todo/todo",
+        "text": "Todo",
+        "iconPath": "./images/clock_bar.png",
+        "selectedIconPath": "./images/clock_bar.png"
+      },
+      {
+        "pagePath": "pages/write/write",
+        "text": "新建",
+        "iconPath": "./images/write_bar.png",
+        "selectedIconPath": "./images/write_bar.png"
+      }
+    ]
+  }
+}

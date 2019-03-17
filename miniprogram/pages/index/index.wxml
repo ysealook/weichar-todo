@@ -1,0 +1,54 @@
+<import src="../../template/todo/todo.wxml"/>
+<view class='todo-detail'>
+  <view class='home-title'>
+    概览
+  </view>
+</view>
+<!-- <view class='all-todo'>
+  <checkbox-group bindchange="checkboxChange">
+    <view class='home-unfinished'>
+      <view>进行中</view>
+      <view class='todo-count'>{{unfinishedTodoList.length}}</view>
+    </view>
+      <view wx:if="{{!unfinishedTodoList.length}}">
+        完成了所有事项
+      </view>
+    <block wx:for="{{unfinishedTodoList}}">
+      <todo-item todo="{{item}}">
+        <checkbox value='{{item.id}}'></checkbox>
+      </todo-item>
+    </block>
+    <view class='home-finished'>
+      <view>已完成</view>
+      <view class='todo-count'>{{finishedTodoList.length}}</view>
+    </view>
+    <view wx:if="{{unfinishedTodoList.length}}">还没有完成的事项，好好计划去完成一件事情吧</view>
+    <block wx:for="{{finishedTodoList}}">
+      <todo-item todo="{{item}}">
+        <checkbox value='{{item.id}}'></checkbox>
+      </todo-item>
+    </block>
+  </checkbox-group>
+  <block wx:for="{{finishedTodoList}}">
+    <view class='todo-item'>
+      <view class='todo-time'>
+        {{item.time}}
+      </view>
+      <view class='todo-content'>
+        {{item.content}}
+      </view>
+      </view>
+  </block>
+</view>
+<view class='no-anything' wx:if="{{!finishedTodoList.length&&!unfinishedTodoList.length}}">
+  <text>还没有任何事项，去定个小目标吧</text>
+  <view text-align="center">
+  <navigator class='write-todo-nav' url='/pages/write/write'  open-type="switchTab" hover-class='hover-nav'>todo</navigator></view>
+</view>
+<text>
+template 展示
+</text>
+<view wx:for="{{finishedTodoList}}">
+  <template is="todo" data="{{...item}}">
+  </template>
+</view> -->

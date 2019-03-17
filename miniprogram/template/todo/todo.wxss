@@ -1,0 +1,7 @@
+/* components/todo-item/todo-item.wxss */
+.unfinished-todo{
+  color: red;
+}
+.finished-todo{
+  color:greenyellow
+}

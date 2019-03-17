@@ -1,0 +1,20 @@
+<wxs module="todocls">
+  var f_cls = function(i){
+    return i == 1 ? 'finished-todo' : 'unfinished-todo';
+  }
+  var markTodo =function(e){
+    console.log(e);
+  }
+  module.exports={f_cls:f_cls,markTodo:markTodo}
+</wxs>
+<template name="todo">
+  <view class='todo-item {{todocls.f_cls(finished)}}'>
+    <view class='todo-time' data-time="{{time}}">{{time}}</view>
+    <view class='todo-content' data-content="{{content}}">
+      {{content}}
+    </view>
+    <view class='todo-handle' bindtap='todocls.markTodo'>
+      编辑
+    </view>
+  </view>
+</template>
